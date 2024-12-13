@@ -1,4 +1,9 @@
 
+/**
+ * Esta clase consiste en una apuesta realizada por un usuario.
+ * Contiene métodos para calcular el valor de la apuesta y gestionar la información relacionada con ella.
+ */
+
 import javax.swing.DefaultListModel;
 import javax.swing.JDialog;
 import javax.swing.WindowConstants;
@@ -140,7 +145,13 @@ public class Apuesta extends javax.swing.JFrame {
         this.listaResultados.setModel(modelovacio);
     }//GEN-LAST:event_bResetearActionPerformed
 
-   
+   /**
+    * 
+    * @param n1
+    * @param n2
+    * @return (int)Math.floor((Math.random()*(n2-n1+1) + n1));
+    */
+    
     public int cualquiera(int n1, int n2)
     {
         return (int)Math.floor((Math.random()*(n2-n1+1) + n1));
